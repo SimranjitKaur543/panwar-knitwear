@@ -25,6 +25,10 @@
   :focus-visible { outline: 2px solid #2FB98A; outline-offset: 3px; }
   @keyframes pkFloat { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
   @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+  .pk-wa { position: fixed; right: 22px; bottom: 22px; z-index: 90; display: inline-flex; align-items: center; gap: 10px; background: #2FB98A; color: #0F2E23; border-radius: 99px; padding: 14px 22px; font-size: 15px; font-weight: 800; line-height: 1; box-shadow: 0 10px 28px rgba(15,46,35,0.28); transition: background .18s ease, transform .18s ease; }
+  .pk-wa:hover { background: #8FE3C0; color: #0F2E23; transform: translateY(-2px); }
+  .pk-wa svg { width: 21px; height: 21px; flex: none; fill: currentColor; display: block; }
+  @media (max-width: 560px) { .pk-wa { right: 16px; bottom: 16px; padding: 14px; gap: 0; } .pk-wa span { display: none; } }
 </style>
 </helmet>
 
@@ -236,6 +240,11 @@
     </div>
     <div style="max-width:1300px; margin:0 auto; padding:22px 40px 40px; border-top:1px solid #33204A; font-size:13.5px; color:#9C8DAD">&copy; 2024 Panwar Knitwear. All rights reserved.</div>
   </footer>
+
+  <a class="pk-wa" href="https://wa.me/919876045457?text=Hello%20Panwar%20Knitwear%2C%20I%20am%20interested%20in%20ZONIXA%20top%20wear%20(T-shirts%2C%20sweatshirts%2C%20hoodies).%20Please%20share%20bulk%20rates%20and%20minimum%20order%20quantity." target="_blank" rel="noopener" aria-label="Chat with Panwar Knitwear on WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12.04 2.02c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2 22.02l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22c5.46 0 9.91-4.45 9.91-9.91s-4.45-9.93-9.91-9.93zm0 18.14c-1.53 0-3.03-.41-4.34-1.19l-.31-.18-3.22.85.86-3.14-.2-.32a8.2 8.2 0 0 1-1.26-4.36c0-4.54 3.7-8.23 8.24-8.23 4.54 0 8.23 3.7 8.23 8.24s-3.69 8.33-8.2 8.33zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.06-.39-2.02-1.25-.75-.66-1.25-1.48-1.4-1.73-.14-.25-.01-.39.11-.51.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.41-.56-.42h-.48c-.16 0-.43.06-.65.31-.23.25-.87.85-.87 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.72 2.66 4.19 3.71.59.25 1.04.4 1.4.51.6.19 1.14.16 1.57.1.48-.07 1.47-.6 1.68-1.19.21-.58.21-1.08.14-1.19-.06-.11-.22-.17-.47-.29z"/></svg>
+    <span>Chat on WhatsApp</span>
+  </a>
 </div>
 </x-dc>
 <script type="text/x-dc" data-dc-script>
