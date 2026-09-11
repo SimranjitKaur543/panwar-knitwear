@@ -13,6 +13,39 @@ Static site. No build step — every page is plain HTML and loads `support.js` f
 | `about.html` | About us |
 | `contact.html` | Contact / bulk enquiry |
 
+## Colours
+
+One dark anchor with complementing neutrals and a single accent, so the garment photos
+carry the page rather than the interface.
+
+| Role | Value |
+| --- | --- |
+| Dark anchor (hero, dark sections) | `#23291A` deep olive |
+| Footer | `#161A10` |
+| Page ground | `#F2EFE4` calico |
+| Body text | `#21241B` |
+| Accent — fills, buttons, badges | `#E08A4C` burnt orange |
+| Accent — text on the light ground | `#9A4517` |
+| Ink on accent fills | `#2A1A0E` |
+
+Two rules worth keeping:
+
+- **The accent needs both values.** `#E08A4C` is for fills and for text on dark. On the
+  light ground it only reaches 2.31:1, so small text there uses `#9A4517` (5.63:1).
+- **Never put white on the accent** — that is 2.66:1. Accent fills take the dark ink
+  `#2A1A0E`. Full-width bands use the dark olive `#2B321F`, not the orange, so they do not
+  shout over the product photos.
+
+Every text/background pair on all six pages passes WCAG AA.
+
+## Images
+
+All images are served from `img/` in this repo. They used to be hot-linked from
+`https://panwarknitwear.com/img/...`, but that hosting account was suspended and every one
+of them broke. They were recovered and committed here, so the site no longer depends on
+that domain. **Do not point them back at `panwarknitwear.com`** even after the hosting is
+restored — local files are faster and cannot break again.
+
 ## Deploy to GitHub + Vercel
 
 1. **Create the repo** — on github.com, New repository, name it `panwar-knitwear`, keep it empty (no README).
